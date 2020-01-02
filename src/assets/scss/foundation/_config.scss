@@ -1,0 +1,86 @@
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Base ----- //
+$c-primary: #133072;
+$c-secondary: #6a8372;
+$c-dark: #1a1a1a;
+$c-grey: #707070;
+$c-lightGrey: #c5c5c5;
+$c-light: #f7f4ef;
+$c-lighter: #faf8f5;
+$c-success: #0089a7;
+$c-info: #2ea9df;
+$c-warning: #ffb11b;
+$c-danger: #c73e3a;
+$c-bg2: #d6b9b9;
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Section Margin Top ----- //
+$b-MT: 100px;
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px;
+$b-borderStyle: solid;
+$b-borderWidth: 2px;
+$b-border: $b-borderWidth $b-borderStyle $c-grey;
+$b-boxShadow: 0 2px 0 rgba($c-dark, 0.25);
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading: 'OpenSans', sans-serif;
+$b-fontFamily: 'OpenSans', sans-serif;
+$b-fontSize: 16px;
+$b-fontSize-s: 75%;
+$b-fontSize-m: 90%;
+$b-fontSize-l: 115%;
+$b-lineHeight: 1.5;
+
+// ----- Sizing ----- //
+
+$b-space: (20px);
+$b-space-s: 0.5 * $b-space;
+$b-space-l: 2 * $b-space;
+$b-space-xl: 4 * $b-space;
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+$g-s: 'em(480px)';
+$g-m: 'em(800px)';
+$g-l: 'em(1024px)';
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ----- Dropdown ----- //
+
+// example：$dropdown-width: em(200px)
+
+//media size
+$m-pc: 1200px;
+$m-pcs: 992px;
+$m-pad: 768px;
+$m-phone: 576px;
+$m-phones: 375px;
+
+//font
+$t-title-font: normal 24px/1.5 'Open Sans', sans-serif;
+
+// border系列
+// $borWid: 1px;
+// $borSty: solid;
+// $borCol: black;
+
+// @mixin bortop($borWid: 1px, $borSty: solid, $borCol: black) {
+//     border: $borWid $borSty $borCol;
+// }
