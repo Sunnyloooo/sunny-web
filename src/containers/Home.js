@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { NavLink } from 'react-router-dom'
 // action
 import { logVerify, logOut } from '../action/index'
 
