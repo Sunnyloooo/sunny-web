@@ -1,8 +1,21 @@
 // all media
-body {
-  background: linear-gradient(to right,$c-lightGrey 61.8%, #f0f0f0 38.2%);
+
+
+
+// background
+@media  (min-width :$m-phone ) {
+  body {
+    background: linear-gradient(to right,$c-lightGrey 61.8%, #f0f0f0 38.2%);
+  }
+}
+@media  (max-width :$m-phone ) {
+  body {
+    height: 100vh;
+    background: linear-gradient(to bottom,$c-lightGrey 61.8%, #f0f0f0 38.2%);
+  }
 }
 
+// main
 @media  (min-width :$m-phone ) {
   //goldenLogo
   $gLW:50px;
@@ -45,4 +58,43 @@ body {
   }
 }
 @media  (max-width :$m-phone ) {
+  //goldenLogo
+  $gLW:50px;
+  $gLH:50px;
+  $glB:2px;
+  .sunnyLogo{
+    border: $glB solid $c-dark;
+    width: $gLW;
+    height: $gLH;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    & div{
+      border: $glB solid $c-dark;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+    .logoCircle1{
+      width: $gLW/1.618;
+      height: $gLH/1.618;
+    }
+    .logoCircle2{
+      width: $gLW/1.618/1.618;
+      height: $gLH/1.618/1.618;
+    }
+    .logoCircle3{
+      width: $gLW/1.618/1.618/1.618;
+      height: $gLH/1.618/1.618/1.618;
+    }
+    .logoCircle4{
+      width: $gLW/1.618/1.618/1.618/1.618;
+      height: $gLH/1.618/1.618/1.618/1.618;
+    }
+    .logoCircle5{
+      width: $gLW/1.618/1.618/1.618/1.618/1.618;
+      height: $gLH/1.618/1.618/1.618/1.618/1.618;
+    }
+  }
 }
