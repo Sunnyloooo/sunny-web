@@ -1,6 +1,17 @@
 // all media
 
 
+// home
+@media  (min-width :$m-phone ) {
+  .homePage{
+    padding-top: 15px;
+  }
+}
+@media  (max-width :$m-phone ) {
+  .homePage{
+    padding-top: 15px;
+  }
+}
 
 // background
 @media  (min-width :$m-phone ) {
@@ -10,7 +21,7 @@
 }
 @media  (max-width :$m-phone ) {
   body {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to bottom,$c-lightGrey 61.8%, #f0f0f0 38.2%);
   }
 }
@@ -64,7 +75,7 @@
   $glB:2px;
   .sunnyLogo{
     border: $glB solid $c-dark;
-    width: $gLW;
+    min-width: $gLW;
     height: $gLH;
     border-radius: 50%;
     display: flex;

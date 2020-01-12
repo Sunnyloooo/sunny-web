@@ -1,0 +1,69 @@
+{
+  "Front": {
+    "Javascript": {
+      "Framework": ["Angular","React","Vue"],
+      "Module Bundlers": ["Webpack"],
+      "Preprocess": ["Babel","TypeScript","CoffeeScript","UglifyJS"]
+    },
+    "Css": {
+      "Framework": ["Bootstrap","Semantic UI"],
+      "Architecture": ["OOCSS","BEM","SMACSS"],
+      "Pre-processors": ["Sass","PostCSS","Less","Stylus"]
+    }
+  },
+  "Back": {
+    "Language": {
+      "Scripting": ["NodeJS", "PHP", "Python", "Ruby"],
+      "Functional": ["Clojure", "Elixir", "Erlang", "Haskell", "Scala"],
+      "Others": ["C#(ASP.NET)", "Golang", "Java", "Rust"]
+    },
+    "Framework": [
+      "ASP.NET (C#)",
+      "Spring (Java)",
+      "NodeJS (Javascript)",
+      "Laravel (PHP)",
+      "Django, Flask (Python)",
+      "Ruby on Rails (Ruby)"
+    ],
+    "PackageManager": {
+      "NodeJs": ["NPM YARN"],
+      "Python": ["pip"],
+      "Ruby": ["gems"]
+    },
+    "Testing": {
+      "NodeJs": ["Mocha","Chai","Sinon","Mockery"],
+      "PHP": ["PHPUnit","PHPSpec",""]
+    },
+    "Database": {
+      "Relational Database": [
+        "MySQL",
+        "MariaDB",
+        "PostgreSQL",
+        "Microsoft SQL Server",
+        "Oracle"
+      ],
+      "Not Only SQL": {
+        "key-Value": [
+          "Amazon Dynamo",
+          "Apache Cassandra",
+          "Google BigTable",
+          "Hadoop HBase"
+        ],
+        "In-memory": [
+          "Redis",
+          "Memcached"
+        ],
+        "Document": [
+          "CouchDB",
+          "MongoDB",
+          "Riak"
+        ],
+        "Graph": [
+          "Neo4j",
+          "InfoGrid",
+          "AllegroGrph"
+        ]
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ const LogBox = props => {
   const { email, password, emailWarn, passwordWarn } = props.state
   return (
     <>
-      <div className="logBox row justify-content-center">
+      <div className="col-10 col-sm-8 col-md-7 col-lg-5 logBox row justify-content-center">
         <div className="col-8 m-auto text-center position-relative">
           <input
             type="email"

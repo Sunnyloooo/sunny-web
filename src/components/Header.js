@@ -8,20 +8,25 @@ import { logOut } from '../action/appState'
 
 const Header = props => {
   return (
-    <div className="row justify-content-between align-items-center m-3">
-      <NavLink to={'/'} className="row align-items-center">
+    <div className="d-flex justify-content-between align-items-center pageHeader">
+      <NavLink to={'/'} className="d-flex align-items-center col-6 col-sm-4">
         <Logo />
-        <h4 className="m-3">Sunny</h4>
+        <h4 className="mb-1 mx-3">Sunny</h4>
       </NavLink>
-      <h5>
-        {!props.login ? (
-          <NavLink to="/log"> LOG</NavLink>
-        ) : (
-          <NavLink to={'/'} onClick={props.logOut}>
-            OUT
-          </NavLink>
-        )}
-      </h5>
+      <div className="d-flex col-6 col-sm-8 justify-content-end align-items-center">
+        <h5 className="my-auto ml-4">
+          <NavLink to="/blog">BLOG</NavLink>
+        </h5>
+        <h5 className="my-auto ml-4">
+          {!props.login ? (
+            <NavLink to="/log">LOG</NavLink>
+          ) : (
+            <NavLink to={'/'} onClick={props.logOut}>
+              OUT
+            </NavLink>
+          )}
+        </h5>
+      </div>
     </div>
   )
 }

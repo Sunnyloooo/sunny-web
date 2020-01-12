@@ -68,7 +68,7 @@ class Log extends React.Component {
         {login ? (
           <Redirect to={'/'} />
         ) : (
-          <div className="container-fluid log">
+          <div className="container-fluid homePage log">
             <Header />
             <div className="row justify-content-center">
               <LogBox {...this} />
