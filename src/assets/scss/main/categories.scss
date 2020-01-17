@@ -1,10 +1,20 @@
-.categories{
-.routerBackLink{
-  color:$c-grey;
-}
+.categories {
+  .routerBackLink {
+    color: $c-grey;
+  }
+  .categoriesNav {
+    color: $c-grey;
+    h3{
+      cursor: pointer;
+      transition: 0.5s;
+      &.active{
+        color: $c-dark;
+      }
+    }
+  }
 }
 
-@media  (min-width :$m-phone ) {
+@media (min-width: $m-phone) {
 }
-@media  (max-width :$m-phone ) {
+@media (max-width: $m-phone) {
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 //data
 import data from './data'
@@ -38,57 +38,36 @@ const print = data => {
   return result
 }
 
-const Categories = props => (
-  <>
-    <div className="col-12 m-2">
-      <div className="text-center">
-        <h3>Front</h3>
+const Categories = props => {
+  const [key, setKey] = useState('')
+  const category = Object.keys(data)
+  return (
+    <>
+      <div className="col-12 d-flex justify-content-between m-2 flex-wrap categoriesNav">
+        {category.map((item, index) => (
+          <h3 key={item + index} className={key===item?'active':''} onClick={() => setKey(item)}>
+            {item}
+          </h3>
+        ))}
       </div>
-      <div className="d-flex  justify-content-center">
-        <div className="col-6">
-          <h4>Javascript</h4>
-          {print(front.Javascript)}
-        </div>
-        <div className="col-6">
-          <h4>Css</h4>
-          {print(front.Css)}
-        </div>
+      <div className="col-12 m-2">
+        {key === '' ? (
+          <></>
+        ) : (
+          <>
+            <div className="d-flex flex-wrap  justify-content-center">
+              {Object.keys(data[key]).map((item, index) => (
+                <div key={item + index} className="col-6 col-sm-4 col-md-3">
+                  <h4>{item}</h4>
+                  {print(data[key][item])}
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
-    </div>
-    <div className="col-12 m-2">
-      <div className="text-center">
-        <h3>Back</h3>
-      </div>
-      <div className="d-flex  justify-content-center">
-        <div className="col-2">
-          <h4>Language</h4>
-          {print(back.Language)}
-        </div>
-        <div className="col-3">
-          <h4>Package manager</h4>
-          {print(back.PackageManager)}
-        </div>
-        <div className="col-3">
-          <h4>Framework</h4>
-          {print(back.Framework)}
-        </div>
-        <div className="col-2">
-          <h4>Testing</h4>
-          {print(back.Testing)}
-        </div>
-        <div className="col-2">
-          <h4>Database</h4>
-          {print(back.Database)}
-        </div>
-      </div>
-    </div>
-    <div className="col-12 d-flex justify-content-between m-2 flex-wrap">
-      <h3>ML </h3>
-      <h3>Linux </h3>
-      <h3>Algorithm </h3>
-      <h3>Introduction To Computers </h3>
-    </div>
-  </>
-)
+    </>
+  )
+}
 
 export default Categories

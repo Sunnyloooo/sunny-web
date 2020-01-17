@@ -25,7 +25,7 @@
       "Django, Flask (Python)",
       "Ruby on Rails (Ruby)"
     ],
-    "PackageManager": {
+    "Package Manager": {
       "NodeJs": ["NPM YARN"],
       "Python": ["pip"],
       "Ruby": ["gems"]
@@ -65,5 +65,9 @@
         ]
       }
     }
-  }
+  },
+  "Machine Learning": {},
+  "Linux": {},
+  "Algorithm": {},
+  "Introduction To Computers": {}
 }
